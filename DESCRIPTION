@@ -1,0 +1,44 @@
+Package: PDigamma
+Type: Package
+Title: Power-Denominator Digamma Family for Heavy-Tailed Count Regression
+Version: 0.1.0
+Authors@R: c(
+    person("Your", "Yunfeng Zhang", email = "zhangyunfeng@ruc.edu.cn", 
+           role = c("aut", "cre")),
+    person("Co-author", "Shengwang Meng", email = "mengshw@ruc.edu.cn", 
+           role = "aut"))
+Description: Implements the Power-Denominator Digamma (PDigamma) distribution 
+    family for regression modeling of heavy-tailed count data. Provides 
+    tail-index regression within a pure discrete framework, with particular 
+    focus on insurance claims, catastrophe modeling, and extreme event 
+    frequency analysis. Features include: (1) explicit tail index regression 
+    via heteroscedastic parameter modeling; (2) EM algorithm with hard 
+    boundary projection for constrained maximum likelihood; (3) adaptive 
+    m-out-of-n bootstrap for valid inference in infinite variance regimes; 
+    (4) Sibuya boundary diagnostics and mixed extreme value inference 
+    protocols. The package fills the gap between exponential-tailed models 
+    (Poisson, Negative Binomial) and fixed power-law models (Zeta) by 
+    allowing covariate-dependent tail heaviness.
+License: MIT + file LICENSE
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 7.3.3
+Depends: 
+    R (>= 4.0.0)
+Imports:
+    stats,
+    utils,
+    MASS,
+    numDeriv
+Suggests:
+    testthat (>= 3.0.0),
+    knitr,
+    rmarkdown,
+    ggplot2,
+    evd,
+    extRemes
+VignetteBuilder: knitr
+URL: https://github.com/Pluspeak/PDigamma
+BugReports: https://github.com/Pluspeak/PDigamma/issues
+SystemRequirements: GNU make
+
